@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding Objects in JavaScript</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.6;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #082032;
+    }
+
+    h2 {
+      color: #082032;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+
+    code {
+      background-color: #f2f2f2;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Understanding Objects in JavaScript</h1>
+
+    <p>An object in JavaScript is a collection of key-value pairs. It can hold any type of value such as numbers, strings, or other objects.</p>
+
+    <p>An object is defined using curly braces <code>{}</code> and can have properties and methods. Properties are variables that hold values, and methods are functions that are associated with an object.</p>
+
+    <h2>Internal Representation of Objects in JavaScript</h2>
+    <p>Objects in JavaScript are created using a special data type called "object." When an object is created, JavaScript internally creates a reference to the object and stores it in memory. The reference is a unique identifier for the object, and it allows us to access and modify the properties and methods of the object.</p>
+
+    <p>Objects in JavaScript are dynamic, which means that you can add or remove properties and methods from an object at any time. When you add a new property to an object, JavaScript internally creates a new memory location to store the value of the property.</p>
+
+    <p>Objects in JavaScript are also mutable, which means that you can change the values of the properties of an object. When you change the value of a property, JavaScript internally updates the memory location of the property to hold the new value.</p>
+
+    <h2>Passing Objects in JavaScript</h2>
+    <p>In JavaScript, objects are passed by reference, not by value. This means that when you pass an object as an argument to a function or assign an object to a variable, a reference to the object is passed or assigned, not a copy of the object.</p>
+
+    <h2>Example of an Object in JavaScript</h2>
+    <p>Let's consider an example of a laptop object:</p>
+    <pre><code>const laptop = {
+  brand: "Dell",
+  model: "Inspiron",
+  color: "Silver",
+  RAM: "8GB",
+  storage: "512GB SSD",
+  turnOn: function() {
+    console.log("Laptop is turning on...");
+  },
+  turnOff: function() {
+    console.log("Laptop is turning off...");
+  }
+};</code></pre>
+
+    <p>The laptop object has properties such as brand, model, color, RAM, and storage, and methods called turnOn() and turnOff(). You can access these properties and methods using dot notation (e.g., <code>laptop.brand</code>) or bracket notation (e.g., <code>laptop['brand']</code>).</p>
+
+  </div>
+</body>
+</html>

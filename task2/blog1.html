@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTTP/1.1 vs. HTTP/2: Unraveling the Next Era of Web Communication</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.6;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #082032;
+    }
+
+    h2 {
+      color: #082032;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>HTTP/1.1 vs. HTTP/2: Unraveling the Next Era of Web Communication</h1>
+
+    <table>
+      <tr>
+        <th>HTTP1.1</th>
+        <th>HTTP2</th>
+      </tr>
+      <tr>
+        <td>Released in 1999</td>
+        <td>Released in 2015</td>
+      </tr>
+      <tr>
+        <td>Request-Response Model</td>
+        <td>Multiplexing Model</td>
+      </tr>
+      <tr>
+        <td>Uses text format</td>
+        <td>Uses binary format</td>
+      </tr>
+      <tr>
+        <td>Header Overhead</td>
+        <td>Header Compression</td>
+      </tr>
+      <tr>
+        <td>Server can only send a response after receiving a request</td>
+        <td>Server Push for faster page loads</td>
+      </tr>
+      <tr>
+        <td>Multiple connections required</td>
+        <td>Single connection for improved efficiency</td>
+      </tr>
+      <tr>
+        <td>Encryption optional</td>
+        <td>Encryption mandatory</td>
+      </tr>
+    </table>
+
+    <h2>HTTP1.1: Request-Response Model</h2>
+    <p>HTTP1.1 uses a request-response model. When a client requests a resource from a server, the server sends a response that includes the requested resource. However, this model can lead to increased latency and slower page loads as the number of requests increases.</p>
+
+    <h2>HTTP2: Multiplexing Model</h2>
+    <p>HTTP2 revolutionized data transfer with multiplexing. It allows multiple requests to be sent and received in parallel over a single connection. This leads to faster and more efficient data transfer, reducing latency and enhancing web performance.</p>
+
+    <h2>Header Compression for Efficiency</h2>
+    <p>In HTTP1.1, headers are sent with each request and response, adding overhead to each transaction. HTTP2 utilizes header compression, reducing the size of headers and speeding up data transfers. This enhancement significantly improves efficiency and reduces the payload size exchanged between the client and server.</p>
+
+    <h2>Server Push for Faster Page Loads</h2>
+    <p>HTTP2 introduces server push, a game-changer in web performance. With server push, the server can proactively send resources to the client without waiting for explicit requests. This optimizes page loading times, as the client doesn't have to wait for each resource to be requested before loading. It creates a more responsive and seamless user experience.</p>
+
+    <h2>Single Connection for Improved Efficiency</h2>
+    <p>In HTTP1.1, multiple connections are established for each resource requested
